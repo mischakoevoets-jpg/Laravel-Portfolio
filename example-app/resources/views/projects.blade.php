@@ -1,13 +1,14 @@
 @extends('layout.app')
 @section('content')
-@endsection
-
 <div class="main">
     <div class="textbox">
         <h1>Projects</h1>
         <p>Check out some of my projects on my <a href="https://github.com/mischakoevoets-jpg">GitHub</a>!</p>
     </div>
 </div>
+
+@endsection
+
 
 @section('css')
     // additional css here

@@ -18,15 +18,25 @@ Retrieved 2026-05-17, License - CC BY-SA 4.0
         @import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap');
     </style>
     <style>
-
-        .body{
+        header{
+            background-color: lightgray;
+            margin: 0%;
+            padding: 5px;
+        }
+        header marquee{
+            color: red;
+            font-size: larger  ;
+        }
+        .body {
             font-family: 'Pixelify Sans', pixelify;
         }
+
         .sidebar {
             length: 100%;
             float: left;
         }
-        body{
+
+        body {
             font-family: 'Pixelify Sans', pixelify;
         }
 
@@ -87,6 +97,9 @@ Retrieved 2026-05-17, License - CC BY-SA 4.0
             }
         }
     </style>
+    <header>
+        <marquee behavior="scroll" direction="left">This is a rewriting of my old portfolio website in Laravel! Most stuff is very barebones but thats fine!</marquee>
+    </header>
 
     <div class="sidebar">
         <div class="sidenav">
@@ -96,17 +109,17 @@ Retrieved 2026-05-17, License - CC BY-SA 4.0
             <a href="/contact">Contact</a>
         </div>
     </div>
-  <!-- Navbar Area End -->
+    <!-- Navbar Area End -->
 
 
-  @yield('content')
-  <!--for adding your content-->
+    @yield('content')
+    <!--for adding your content-->
 
-  <!-- Add Footer Area Start -->
+    <!-- Add Footer Area Start -->
 
-  <!-- Add Footer Area End -->
+    <!-- Add Footer Area End -->
 
-  <!-- **** All JS Files here ***** -->
+    <!-- **** All JS Files here ***** -->
 
 </body>
 

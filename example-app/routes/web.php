@@ -9,3 +9,11 @@ Route::get('/', function () {
 Route::get('/projects', function () {
     return view('projects');
 });
+
+Route::get('/music', function () { 
+    return view('music');
+});
+
+Route::get('/contact', function () { 
+    return view('contact');
+});

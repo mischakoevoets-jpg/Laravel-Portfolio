@@ -1,13 +1,14 @@
 @extends('layout.app')
 @section('content')
-@endsection
-
 <div class="main">
     <div class="textbox">
         <h1>Home</h1>
         <p>Welcome to the home page!</p>
     </div>
 </div>
+@endsection
+
+
 
 @section('css')
     // additional css here
