@@ -3,10 +3,18 @@
   "framework": null,
   "functions": {
     "api/index.php": {
-      "runtime": "vercel-php@0.7.3"
+      "runtime": "vercel-php@0.8.0"
     }
   },
   "routes": [
+    {
+      "src": "/build/(.*)",
+      "dest": "/build/$1"
+    },
+    {
+      "src": "/favicon.ico",
+      "dest": "/favicon.ico"
+    },
     {
       "src": "/(.*)",
       "dest": "/api/index.php"
@@ -22,6 +30,7 @@
     "APP_SERVICES_CACHE": "/tmp/services.php",
     "VIEW_COMPILED_PATH": "/tmp/views",
     "CACHE_DRIVER": "array",
+    "CACHE_STORE": "array",
     "LOG_CHANNEL": "stderr",
     "SESSION_DRIVER": "cookie"
   }
